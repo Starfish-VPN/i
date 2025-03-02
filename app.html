@@ -5,20 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>กำลังเปลี่ยนเส้นทาง...</title>
     <script>
-        function redirect() {
-            var userAgent = navigator.userAgent || navigator.vendor;
-            
-            // ตรวจสอบ Android
-            if (/android/i.test(userAgent)) {
-                window.location.href = "https://play.google.com/store/apps/details?id=koala.pro.net&pcampaignid=web_share";
-            }
-            // สำหรับอุปกรณ์อื่น
-            else {
-                window.location.href = "https://yourwebsite.com/download";
-            }
+        window.onload = function() {
+            window.location.href = "https://play.google.com/store/apps/details?id=koala.pro.net&pcampaignid=web_share";
         }
-
-        window.onload = redirect;
     </script>
 </head>
 <body>
