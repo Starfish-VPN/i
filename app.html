@@ -8,10 +8,13 @@
         function redirect() {
             var userAgent = navigator.userAgent || navigator.vendor;
             
+            // ตรวจสอบ Android
             if (/android/i.test(userAgent)) {
                 window.location.href = "https://play.google.com/store/apps/details?id=koala.pro.net&pcampaignid=web_share";
-            } else {
-                window.location.href = "https://yourwebsite.com/download";  // สำหรับอุปกรณ์อื่น
+            }
+            // สำหรับอุปกรณ์อื่น
+            else {
+                window.location.href = "https://yourwebsite.com/download";
             }
         }
 
